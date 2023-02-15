@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Resume Builder</h1>
+    </header>
+    <main>
+      <form id="resume-form">
+        <section>
+          <h2>Personal Information</h2>
+          <div>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="first-name" name="last-name" required>
+          </div>
+          <div>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+          </div>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <div>
+            <label for="school-name">School Name:</label>
+            <input type="text" id="school-name" name="school-name" required>
+          </div>
+          <div>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+          </div>
+          <div>
+            <label for="field-of-study">Field of Study:</label>
+            <input type="text" id="field-of-study" name="field-of-study">
+          </div>
+          <div>
+            <label for="graduation-date">Graduation Date:</label>
+            <input type="date" id="graduation-date" name="graduation-date">
+          </div>
+        </section>
+        <section>
+          <h2>Work Experience</h2>
+          <div>
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+          </div>
+          <div>
+            <label for="employer">Employer:</label>
+            <input type="text" id="employer" name="employer" required>
+          </div>
+          <div>
+            <label for="employment-date">Employment Date:</label>
+            <input type="text" id="employment-date" name="employment-date">
+          </div>
+          <div>
+            <label for="job-description">Job Description:</label>
+            <textarea id="job-description" name="job-description" rows="5"></textarea>
+          </div>
+        </section>
+        <section>
+          <h2>Skills</h2>
+          <div>
+            <label for="skill-1">Skill 1:</label>
+            <input type="text" id="skill-1" name="skill-1" required>
+          </div>
+          <div>
+            <label for="skill-2">Skill 2:</label>
+            <input type="text" id="skill-2" name="skill-2" required>
+          </div>
+          <div>
+            <label for="skill-3">Skill 3:</label>
+            <input type="text" id="skill-3" name="skill-3" required>
+        </div>
+    </section>
+    <button type="submit">Download PDF</button>
+  </form>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
